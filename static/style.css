@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Times New Roman";
+}
+
+body {
+  background: url("https://wallpaperaccess.com/full/2454628.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_item {
+  width: 300px;
+  height: 400px;
+  background-color: #242628;
+  border-radius: 10px;
+  margin: 0 60px;
+  overflow: hidden;
+}
+
+.img_item {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #f2726a;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.img_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img_item:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  transform: translateY(-25px);
+}
+
+.Name_item {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.sub_name {
+  text-align: center;
+  color: rgb(242, 114, 106);
+  font-weight: 400;
+}
+
+.contact {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 45px;
+}
+
+.contact i {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: #242628;
+  font-size: 15px;
+  border: 2px solid #f2726a;
+  margin: 0 auto;
+  display: block;
+  padding: 13px 26px;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact i:hover {
+  color: #f2726a;
+  transform: scale(0.9);
+}
+
+.btn:hover {
+  background-color: #f2726a;
+  transform: scale(0.9);
+}

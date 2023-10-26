@@ -1,0 +1,8 @@
+runtime: python39  # Sử dụng runtime phù hợp với ứng dụng của bạn
+entrypoint: gunicorn -b :$PORT main:app  # Điều chỉnh cách bạn chạy ứng dụng
+
+handlers:
+- url: /static
+  static_dir: static  # Xác định thư mục chứa tài nguyên tĩnh
+- url: /.*
+  script: auto
